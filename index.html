@@ -401,7 +401,7 @@
         <section id="gifts" class="section section-06">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title">The gifts</h2>
+                    <h2 class="section-title">Wedding list</h2>
                 </div>
                 <div class="row section-content">
                     <p>Please do not feel obliged to buy a wedding present; having you there to share our special day is enough.</p>
@@ -425,29 +425,37 @@
         <section id="contact" class="section section-07">
             <div class="container">
                 <div class="row">
-                    <h2 class="section-title">The contact</h2>
+                    <h2 class="section-title">Contact</h2>
                 </div>
-                <div class="row section-content flex">
+                <div class="row section-content">
+                    <p class="lead">Requests, demands, gossip &hellip; get in touch!</p>
+                </div>
+                <div class="row flex">
                     <div class="col col-half">
                         <form action="" id="contact-form" method="post" role="form">
 
                             <div class="form-group">
-                                <input type="radio" name="form-attendance" id="form-check-attend-yes"  value="Yes, can't wait." required="required"> Attending
-
-                                <input type="radio" name="form-attendance" id="form-check-attend-no" value="No, sadly not" required="required"> Not Attending
+                                <label for="">
+                                    <input type="radio" name="form-attendance" id="form-check-attend-yes"  value="Yes, can't wait." required="required"> 
+                                    Attending
+                                </label>
+                                <label for="">
+                                    <input type="radio" name="form-attendance" id="form-check-attend-no" value="No, sadly not" required="required"> 
+                                    Not Attending
+                                </label>
                             </div>
 
-                            <input type="text" name="form-name" id="form_name" placeholder="* Guest's Name(s) &hellip;" required="required">
+                            <input type="text" name="form-name" id="form_name" class="form-input" placeholder="* Guest's Name(s) &hellip;" required="required">
 
-                            <input type="email" name="form-email" id="form_email" placeholder="* Email Address" required="required">
+                            <input type="email" name="form-email" id="form_email" class="form-input" placeholder="* Email Address" required="required">
 
-                            <textarea name="form_message" id="form-comment" placeholder="Please leave us a s note, a special request, etc." cols="30" rows="10"></textarea>
+                            <textarea name="form_message" id="form-comment" class="form-input" placeholder="Please leave us a s note, a special request, etc." cols="30" rows="10"></textarea>
 
                             <input type="submit" class="btn btn-send" value="RSVP">
                         </form>
                     </div>
                     <div class="col col-half">
-                        <ul class="contact-list">
+                        <ul class="list--contact">
                             <li class="list-item">
                                 <ion-icon name="call"></ion-icon> <span>Jason: </span> <a href="tel:0123456789">01123 456 789</a>
                             </li>
@@ -455,7 +463,7 @@
                                 <ion-icon name="call"></ion-icon> <span>Carole: </span> <a href="tel:0987654321">01987 654 321</a>
                             </li>
                             <li class="list-item">
-                                <ion-icon name="mail"></ion-icon> <span>Email: </span> <a href="mailto:#">rsvp@wedding.email.com</a>
+                                <ion-icon name="mail"></ion-icon> <a href="mailto:#">rsvp@wedding.email.com</a>
                             </li>
                         </ul>
                     </div>

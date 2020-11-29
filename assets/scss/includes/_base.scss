@@ -8,6 +8,8 @@ body {
     letter-spacing: .04em;
     color: $color-light;
     background: $color-canvas;
+    word-wrap: break-word;
+    hyphens: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }

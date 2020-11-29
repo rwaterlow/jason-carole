@@ -1,1 +1,18 @@
 /* BUTTONS */
+.btn {
+    padding: 0.75rem 2rem;
+    border-radius: .1rem;
+
+    &-send {
+        background: $color-canvas-alt;
+        border-color: $color-canvas-alt;
+        cursor: pointer;
+        transition: $transition;
+        transition-property: background;
+
+        &:hover,
+        &:focus {
+            background: lighten($color-canvas-alt, 2.5);
+        }
+    }
+}

@@ -15,16 +15,10 @@
 
 .col {
     flex: 100%;
-
-    // &:first-of-type {
-    //     flex: 2;
-    // }
-
-    // &+.col {
-    //     margin-left: 2rem;
-    // }
+    
     &-half {
         flex: 1;
+        margin-bottom: 2rem;
     }
 }
 
@@ -35,7 +29,13 @@
     }
 }
 
+.lead {
+    font-size: 2rem;
+    text-align: center;
+}
+
 ion-icon {
-    margin-bottom: -.25rem;
+    margin-bottom: -.75rem;
+    padding: .25rem;
     font-size: 1.5rem;
 }

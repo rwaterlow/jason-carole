@@ -2,8 +2,8 @@
 .site-navigation {
     position: relative;
     width: 100%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
     background: $color-light;
     box-shadow: 0 2px 1rem -1px $color-base;
     z-index: 9999;
@@ -11,22 +11,5 @@
     .row {
         margin: 0;
         padding: 0;
-    }
-}
-
-.menu-link {
-    // padding: .5rem 0.75rem;
-    border-bottom: 2px solid transparent;
-    transition-property: border;
-
-    &:hover,
-    &:focus {
-        color: $color-brand;
-        border-bottom-color: $color-brand;
-    }
-
-    &:active {
-        color: $color-light;
-        background: $color-brand;
     }
 }
