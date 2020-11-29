@@ -421,6 +421,30 @@ table {
   display: none;
 }
 
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  opacity: 0;
+  -webkit-animation: fadeIn 1s ease-in .35s forwards;
+          animation: fadeIn 1s ease-in .35s forwards;
+}
+
 body {
   position: relative;
   font-family: "Sanchez", "Helvetica Neue", Arial, sans-serif;
