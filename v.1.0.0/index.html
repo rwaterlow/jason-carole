@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags always come first -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<!-- MAPS -->
+		<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+		<title>Carole and Jason are getting married!</title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
+		<!-- Custom CSS -->
+		<link rel="stylesheet" type="text/css" href="style.css">
+
+		<!-- Google Fonts CSS -->
+	    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Playball|Sanchez:400,400i|Varela|Yesteryear">
+
+	    <!-- FontAwesome CSS -->
+	    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+	    <!-- Custom CSS -->
+		<style type="text/css" media="screen">
+/*
+			.brdr {
+				border: 1px solid red;
+			}
+*/
+	    </style>
+	</head>
+	<body data-spy="scroll" data-target="#navigation" onload="initialize()">
+		<header id="top" class="bg-green">
+			<div class="container sect-sm">
+				<div class="row">
+					<div class="col-md-10 offset-md-1">
+
+						<div id="main-header" class="mask">
+							<div class="border">
+							<div class="content">
+								<img class="brackets" src="http://gopipers.co.uk/img/brackets.png" alt="decorative brackets">
+								<h1>Carole</h1>
+								<h4>and</h4>
+								<h2>Jason</h2>
+								<h6>are getting married!</h6>
+							</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-10 offset-md-1">
+						<img class="img-fluid" src="http://gopipers.co.uk/img/date.png" alt="Wedding date banner">
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+
+						<div id="counter" class="countdownHolder">
+
+							<div class="countDays">
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="boxName">
+									<span class="Days">DAYS</span>
+								</span>
+							</div>
+							<span class="points">:</span>
+							<span class="countDiv countDiv0"></span>
+
+							<div class="countHours">
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="boxName">
+									<span class="Hours">HRS</span>
+								</span>
+							</div>
+							<span class="points">:</span>
+							<span class="countDiv countDiv1"></span>
+
+							<div class="countMinutes">
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="boxName">
+									<span class="Minutes">MNTS</span>
+								</span>
+							</div>
+							<span class="points">:</span>
+							<span class="countDiv countDiv2"></span>
+
+							<div class="countSeconds">
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="boxName">
+									<span class="Seconds">SECS</span>
+								</span>
+							</div>
+<!--
+							<span class="points">:</span>
+							<span class="countDiv countDiv3"></span>
+-->
+
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+		</header>
+
+		<nav id="navigation" class="navbar navbar-light bg-faded">
+			<div class="container">
+				<div class="row">
+					<button type="button" class="navbar-toggler hidden-lg-up" data-toggle="collapse" data-target="#nav-collapse" aria-controls="nav-collapse" aria-expanded="false" aria-label="Toggle Navigation">
+<!-- 						<span class="fa fa-bars"></span> -->
+					</button>
+					<div id="nav-collapse" class="navbar-toggleable-md collapse navbar-collapse">
+<!-- 						<a class="navbar-brand" href="#">Navbar</a> -->
+						<ul class="nav navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link" href="#top"><span class="fa fa-fw fa-lg fa-home"></span> <span class="sr-only">(current)</span></a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#couple">The Couple</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#day">The Day</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#venues">Venues</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#transport">Transport</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#accom">Accommodation</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#gifts">Gifts</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="#contact">Contact</a>
+							</li>
+						</ul>
+<!--
+							<form class="form-inline pull-xs-right">
+							<input class="form-control" type="text" placeholder="Search">
+							<button class="btn btn-success-outline" type="submit">Search</button>
+						</form>
+
+-->
+					</div>
+				</div>
+			</div>
+		</nav>
+
+		<section id="couple" class="bg-pink">
+			<div class="container sect-lg">
+				<div class="row">
+					<h1 class="mg-xl">The Couple</h1>
+				</div>
+				<div class="row mg-xxl">
+					<div class="col-md-10 offset-md-1">
+						<blockquote class="blockquote">
+							<p class="display-4"> I was nauseous and tingly all over.<br class="hidden-md-down">
+								I was either in love or I had smallpox.</p>
+							<footer class="blockquote-footer">Woody Allen <cite title="Source Title"></cite></footer>
+						</blockquote>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 offset-md-1"><img class="img-fluid img-thumbnail" src="http://gopipers.co.uk/img/01.png" alt=""></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="day" class="bg-green">
+			<div class="container sect-lg">
+				<div class="row mg-xl">
+					<h1 class="">The Day</h1>
+				</div>
+				<div class="row mg-xxl">
+					<div class="col-md-10 offset-md-1 text-xs-left">
+						<p>Our day at a glance:
+							<ul>
+								<li><b>2:30pm</b> - Wedding ceremony at St John The Baptist Church</li>
+								<li><b>4:00pm</b> - Photographs / Reception drinks at Prestwold Hall</li>
+								<li><b>6:00pm</b> - Wedding breakfast, speeches & cutting of the cake</li>
+								<li><b>8:30pm</b> - First Dance and party!</li>
+								<li><b>Midnight</b> - Carriages</li>
+							</ul>
+						</p>
+						<p>Please note, we won’t be eating dinner until around 6pm, so make sure you have a decent lunch beforehand!</p>
+						<h5>Dietary Requirements</h5>
+						<p>Please let us know as soon as possible if you have any specific dietary requirements so we can cater accordingly.</p>
+						<h5>Children</h5>
+						<p>As much as we would love you to all bring your children with you, due to space restrictions, if you can get babysitters that would be great. If you can’t that’s fine, just let us know as soon as possible so that we can make arrangements.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 offset-md-1"><img class="img-fluid img-thumbnail" src="http://gopipers.co.uk/img/02.png" alt=""></div>
+				</div>
+			</div>
+		</section>
+
+		<section id="venues" class="bg-pink">
+			<div class="container sect-lg">
+				<div class="row mg-xl">
+					<h1 class="">The Venues</h1>
+				</div>
+				<div class="row mg-xxl text-xs-left">
+					<div class="col-md-10 offset-md-1 col-lg-5 offset-lg-1 mg-lg">
+						<h5>Ceremony</h5>
+						<p><b>St John the Baptist Church</b> in South Croxton is a very special church to us as its in Jason’s family village and his dad, Brian Piper, also happens to be the Church Warden. All in all, the perfect venue!</p>
+						<p>The address is:</p>
+						<address>St John the Baptist Church, South Croxton, <br>Leicestershire, LE7 3RJ</address>
+					</div>
+					<div class="col-md-10 offset-md-1 col-lg-5 mg-lg text-xs-center">
+						<div id="map_1" class="map shadow" style=""></div>
+<!-- 						<img class="img-fluid img-thumbnail" src="http://placehold.it/380x280" alt="Map of St John the Baptist Church"> -->
+					</div>
+					<div class="col-md-10 offset-md-1 mg-lg">
+						<p>We ask that you arrive in plenty of time to park your cars as there will be a short walk from the car park to the church. Parking has been made available in a field in the village at the foot of the hill, close to The Golden Fleece. Ushers will be on hand to direct you. For those who arrive early and fancy a drink beforehand, The Golden Fleece will be open and only too happy to assist you!</p>
+					</div>
+					<div class="col-md-10 offset-md-1 col-lg-5 offset-lg-1 mg-lg">
+						<h5>Reception</h5>
+						<p>Our wedding reception will take place at <b>Prestwold Hall</b>, which is a beautiful privately owned stately home located in the village of Prestwold. Its ideally located next to a race track, so Jason was sold before he had even seen the place! It’s a fabulous setting and we’re really excited to be using it for our special day.</p>
+						<p>The address is:</p>
+						<address>Prestwold Hall, Prestwold, <br>Loughborough, LE12 5SQ</address>
+					</div>
+					<div class="col-md-10 offset-md-1 col-lg-5 mg-lg text-xs-center">
+						<div id="map_2" class="map shadow" style=""></div>
+<!-- 						<img class="img-fluid img-thumbnail" src="http://placehold.it/380x280" alt="Map of Prestwold Hall"> -->
+					</div>
+					<div class="col-md-10 offset-md-1 col-md-10 offset-md-1 mg-lg">
+						<p>The reception is around 12 miles/ 20 minutes drive by car from St John the Baptist Church.</p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 offset-md-1">
+						<img class="img-fluid img-thumbnail" src="http://gopipers.co.uk/img/03.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="transport" class="bg-green">
+			<div class="container sect-lg">
+				<div class="row mg-xl">
+					<h1 class="">Transport</h1>
+				</div>
+				<div class="row mg-xxl text-xs-left">
+					<div class="col-md-10 offset-md-1">
+						<p>There is a 12 mile/ 20 minute drive between the church and the venue, so let us know if you need assistance getting from one to the other. We will either find room for you in someone else’s car or provide a minibus. With this in mind, if you are driving and have space in your car to potentially take a guest or two, please let us know.</p>
+						<h5>Parking:</h5>
+						<p>Complimentary parking is available at Prestwold Hall. Please park in the car park at the top of the driveway to the left. You are welcome to leave cars at Prestwold Hall overnight, but it is requested that you collect your vehicles by 11.30am the following day.</p>
+						<h5>Taxis:</h5>
+						<p>The venue doesn’t have great telephone reception, so if you are planning on using a taxi at the end of the night, we strongly recommend that you book taxis in advance.</p>
+						<p>Some local taxi firms are listed for you below:</p>
+						<ul>
+							<li><b>ABC</b> - 01509 231271/ 01509 215500</li>
+							<li><b>Connect</b> - 01509 814053</li>
+							<li><b>Charnwood Taxis</b> - 01509 213333</li>
+							<li><b>Gem Taxis</b> - 01509 211584</li>
+							<li><b>Loughborough Taxis</b> - 01509 590013</li>
+						</ul>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 offset-md-1"><img class="img-fluid img-thumbnail" src="http://gopipers.co.uk/img/04.png" alt=""></div>
+				</div>
+			</div>
+		</section>
+
+	<!-- ACCOMMODATION -->
+		<section id="accom" class="bg-pink">
+			<div class="container sect-lg">
+				<div class="row mg-xl">
+					<h1 class="">Accommodation</h1>
+				</div>
+				<div class="row mg-xxl text-xs-left">
+					<div class="col-md-10 offset-md-1">
+						<p>Prestwold Hall itself only has a couple of rooms available for the bridal party, however there are numerous hotels and B&Bs located nearby.</p>
+						<p>Here’s a few to get you started:</p>
+						<p><small>Please note: <i>Most of the accommodation below offers discounts if you’re part of the wedding party, so make sure you quote ‘Prestwold Hall’ when booking.</i></small></p>
+					</div>
+				</div>
+				<div class="row mg-xxl">
+					<div class="col-md-10 offset-md-1">
+
+						<div class="row">
+							<div class="col-md-6 col-lg-4">
+								<div class="card">
+									<div class="card-block">
+										<h5 class="card-title">Guesthouse at Rempstone</h5>
+										<p class="card-text">1.8miles* (13 rooms available)</p>
+									</div>
+									<div class="card-block">
+										<address class="card-text">Main Street, <br>Rempstone, LE12 6RH</address>
+									</div>
+									<div class="card-block">
+										<p class="card-text">
+											T:  01509 881 886 <br>W: <a href="http://www.guesthouse-rempstone.co.uk" target="_blank" class="card-link">guesthouse-rempstone.co.uk</a>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4">
+								<div class="card">
+									<div class="card-block">
+										<h5 class="card-title">The Hunting Lodge</h5>
+										<p class="card-text">3.1 miles* (6 rooms available)</p>
+									</div>
+									<div class="card-block">
+										<address class="card-text">38 South Street, <br>Barrow upon Soar, LE12 8LZ</address>
+									</div>
+									<div class="card-block">
+										<p class="card-text">
+											T: 01509 412 337 <br>W: <a href="http://www.thehuntinglodgebarrowonsoar.co.uk/" target="_blank" class="card-link">thehuntinglodgebarrowonsoar.co.uk/</a>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4">
+								<div class="card">
+									<div class="card-block">
+										<h5 class="card-title">Rothley Court Hotel</h5>
+										<p class="card-text">8 miles*</p>
+									</div>
+									<div class="card-block">
+										<address class="card-text">Westfield Lane, Rothley, <br>Leicestershire, LE7 7LG</address>
+									</div>
+									<div class="card-block">
+										<p class="card-text">
+											T: 0116 237 4141 <br>W: <a href="http://www.oldenglishinns.co.uk/rothley" target="_blank" class="card-link">oldenglishinns.co.uk/rothley</a>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4">
+								<div class="card">
+									<div class="card-block">
+										<h5 class="card-title">Mountsorrel Guesthouse</h5>
+										<p class="card-text">3.5 miles* (14 rooms available)</p>
+									</div>
+									<div class="card-block">
+										<address class="card-text">217 Loughborough Road, <br>Mountsorrel, Loughborough, <br>Leicestershire, LE12 7AR </address>
+									</div>
+									<div class="card-block">
+										<p class="card-text">
+											T: 01509 412 627 <br>W: <a href="http://www.mountsorrel-guesthouse.co.uk/" target="_blank" class="card-link">mountsorrel-guesthouse.co.uk/</a>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4">
+								<div class="card hidden-xl-down">
+									<div class="card-block">
+										<h5 class="card-title">Hotel Name</h5>
+										<p class="card-text">Distance</p>
+									</div>
+									<div class="card-block">
+										<address class="card-text">Address</address>
+									</div>
+									<div class="card-block">
+										<p class="card-text">
+											T: <br>W: <a href="#" class="card-link">Go somewhere</a>
+										</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 col-lg-4">
+								<div class="card">
+									<div class="card-block">
+										<h5 class="card-title">Premier Inn Loughborough</h5>
+										<p class="card-text">3.5 miles*</p>
+									</div>
+									<div class="card-block">
+										<address class="card-text">Southfields Road, <br>Loughborough, LE11 9SA </address>
+									</div>
+									<div class="card-block">
+										<p class="card-text">
+											T: <br>W: <a href="http://www.premierinn.com/" target="_blank" class="card-link">premierinn.com/</a>
+										</p>
+									</div>
+								</div>
+							</div>
+
+						</div>
+
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 offset-md-1">
+						<img class="img-fluid img-thumbnail" src="http://gopipers.co.uk/img/05.png" alt="">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section id="gifts" class="bg-green">
+			<div class="container sect-lg">
+				<div class="row mg-xxl">
+					<h1 class="">Wedding List</h1>
+				</div>
+				<div class="row mg-xxl text-xs-left">
+					<div class="col-md-10 offset-md-1">
+						<p>Please do not feel obliged to buy a wedding present; having you there to share our special day is enough.</p>
+						<p>However, if you express your love with cash and you’d like to love us a little more, we have put together a gift list at John Lewis. See below for details.</p>
+						<p>To access the list:</p>
+						<ol>
+							<li>Visit <a href="http://www.johnlewisgiftlist.com">www.johnlewisgiftlist.com</a></li>
+							<li>Enter the 'Gift List' number: <b>544158</b></li>
+						</ol>
+						<p><small>Please note: <i>the list will be available 6 weeks prior to the Wedding.</i></small></p>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-10 offset-md-1">
+						<img class="img-fluid" src="http://gopipers.co.uk/img/deco1.png" alt="" width="300px">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<footer id="contact" class="bg-dark">
+			<div class="container sect-lg">
+				<div class="row mg-xxl">
+					<h1 class="">Contact</h1>
+				</div>
+
+				<div class="row mg-lg">
+					<div class="col-md-10 offset-md-1">
+						<h2>Requests, Demands, Gossip &hellip; get in touch!</h2>
+					</div>
+				</div>
+
+				<div class="row">
+<!--
+					<div class="col-md-10 offset-md-1 col-lg-4 mg-xxl push-lg-7 text-lg-left">
+						<ul>
+							<li><span class="fa fa-fw fa-lg fa-mobile"></span>Jason: 07958 472 367</li>
+							<li><span class="fa fa-fw fa-lg fa-mobile"></span>Carole: 07860 694 150</li>
+							<li><span class="fa fa-fw fa-lg fa-envelope"></span> <a href="mailto:rsvp@gopipers.co.uk">rsvp@gopipers.co.uk</a></li>
+						</ul>
+					</div>
+-->
+					<div class="col-md-10 offset-md-1 col-lg-5 offset-lg-1 col-xl-4 offset-xl-2 mg-xxl brdr">
+						<form id="contact-form" method="post" action="assets/php/contact.php" role="form">
+
+							<div class="controls">
+
+								<!-- Attending Radios -->
+								<div class="form-group">
+									<div class="form-check form-check-inline has-feedback">
+										<label class="form-check-label" for="form-check-attend-yes">
+											<input type="radio" id="form-check-attend-yes" class="form-check-input" name="form_attendance" value="Yes, can't wait" required="required" data-error="Please let us know if you will be attending"> Attending
+										</label>
+									</div>
+									<div class="form-check form-check-inline">
+										<label class="form-check-label" for="form-check-attend-no">
+											<input type="radio" id="form-check-attend-no" class="form-check-input" name="form_attendance" value="Sadly not" required="required" data-error="Please let us know if you will be attending"> Not Attending
+										</label>
+									</div>
+									<div class="form-control-feedback help-block with-errors"></div>
+								</div>
+								<!-- END Radios -->
+
+
+								<div class="form-group has-feedback">
+									<input type="text" id="form-name" class="form-control form-control-success form-control-danger" name="form_name" placeholder="* Guest's Name(s) &hellip;" required="required" data-error="Please enter your full names.">
+									<div class="form-control-feedback help-block with-errors"></div>
+								</div>
+								<div class="form-group has-feedback">
+									<input type="email" id="form-email" class="form-control form-control-success form-control-danger" name="form_email" placeholder="* Email address &hellip;" required="required" data-error="Please include a valid email address.">
+									<div class="form-control-feedback help-block with-errors"></div>
+								</div>
+	<!--
+								<div class="form-group has-feedback" style="margin-bottom: 1rem; display: flex; justify-content: space-between;">
+									<label for="form-attend" class="text-xs-left">Attending?</label>
+									<input type="text" id="form-attend" class="form-control form-control-success form-control-danger" placeholder="*Yes/No &amp; No. of attending &hellip;" required style="width: 66% !important">
+								</div>
+	-->
+								<div class="form-group has-feedback">
+									<textarea rows="4" id="form-comment" class="form-control form-control-success form-control-danger" name="form_message" placeholder="Please leave us a note, a special request, etc. &hellip;"></textarea>
+									<div class="form-control-feedback help-block with-errors"></div>
+								</div>
+
+								<input type="submit" class="btn btn-info" value="RSVP">
+
+							</div> <!-- END Contols -->
+
+							<p class="tc-pink" style="padding-top: 1rem; padding-bottom: 1rem;">* denotes required information</p>
+
+							<div class="messages"></div>
+
+						</form>
+
+					</div>
+
+					<div class="col-md-10 offset-md-1 col-lg-4 mg-xxl text-lg-left brdr">
+						<ul>
+							<li><span class="fa fa-fw fa-lg fa-mobile"></span>Jason: 07958 472 367</li>
+							<li><span class="fa fa-fw fa-lg fa-mobile"></span>Carole: 07860 694 150</li>
+							<li><span class="fa fa-fw fa-lg fa-envelope"></span> <a href="mailto:rsvp@gopipers.co.uk">rsvp@gopipers.co.uk</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</footer>
+
+		<div id="sub-footer" class="bg-faded text-xs-center">
+			<div class="container">
+				<p>Music to follow<br>"No singing, no supper"</p>
+			</div>
+		</div>
+
+
+		<!-- JavaScript -->
+		<!-- ================================================== -->
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+		<!-- jQuery JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+
+		<!-- Tether JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+
+		<!-- Bootstrap JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+		<!-- Bootstrap Validator JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+
+		<!-- Modrnizr Custom JS -->
+		<script type="text/javascript" src="http://gopipers.co.uk/counter/js/modernizr.custom.js"></script>
+
+		<!-- Countdown JS -->
+		<script type="text/javascript" src="http://gopipers.co.uk/counter/js/jquery.countdown.js"></script>
+
+		<!-- Countdown Settings JS -->
+		<script type="text/javascript" src="http://gopipers.co.uk/counter/js/scriptTest.js"></script>
+
+		<!-- Easing JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js" integrity="sha256-H3cjtrm/ztDeuhCN9I4yh4iN2Ybx/y1RM7rMmAesA0k=" crossorigin="anonymous"></script>
+
+		<!-- stickyPanel JS -->
+		<script type="text/javascript" src="assets/js/jquery.stickyPanel.min.js"></script>
+
+		<!-- Contact JS -->
+		<script type="text/javascript" src="assets/js/contact.js"></script>
+
+		<!-- Custom JS -->
+		<script type="text/javascript">
+			$().ready(function () {
+
+				var stickyPanelOptions = {
+				    afterDetachCSSClass: "",
+				    savePanelSpace: true
+				};
+				$("nav").stickyPanel(stickyPanelOptions);
+			});
+		</script>
+
+		<script type="text/javascript">
+			$(function() {
+			    $('nav a').bind('click',function(event){
+			        var $anchor = $(this);
+
+			        $('html, body').stop().animate({
+			            scrollTop: $($anchor.attr('href')).offset().top
+			        }, 1500,'easeInOutExpo');
+			        /*
+			        if you don't want to use the easing effects:
+			        $('html, body').stop().animate({
+			            scrollTop: $($anchor.attr('href')).offset().top
+			        }, 1000);
+			        */
+			        event.preventDefault();
+			    });
+			});
+		</script>
+
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
+		<script type="text/javascript">
+			function initialize() {
+				var latlng = new google.maps.LatLng(52.6860018,-0.9782463);
+				var settings = {
+					zoom: 15,
+					center: latlng,
+					mapTypeControl: true,
+					mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+					navigationControl: true,
+					navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+		    };
+		    var map = new google.maps.Map(document.getElementById("map_1"), settings);
+			var companyPos = new google.maps.LatLng(52.6860018,-0.9782463);
+			var companyMarker = new google.maps.Marker({
+			  position: companyPos,
+			  map: map,
+			  title:"St John the Baptist"
+			});
+				var latlng = new google.maps.LatLng(52.7882654,-1.1431310);
+				var settings = {
+					zoom: 15,
+					center: latlng,
+					mapTypeControl: true,
+					mapTypeControlOptions: {style: google.maps.MapTypeControlStyle.DROPDOWN_MENU},
+					navigationControl: true,
+					navigationControlOptions: {style: google.maps.NavigationControlStyle.SMALL},
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+		    };
+		    var map = new google.maps.Map(document.getElementById("map_2"), settings);
+			var companyPos = new google.maps.LatLng(52.7882654,-1.1431310);
+			var companyMarker = new google.maps.Marker({
+			  position: companyPos,
+			  map: map,
+			  title:"Prestwold Hall"
+			});
+		    }
+		</script>
+	</body>
+</html>

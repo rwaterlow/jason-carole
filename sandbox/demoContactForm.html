@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags always come first -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title></title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
+		<!-- Google Fonts CSS -->
+		<link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&subset=latin-ext">
+
+		<!-- Custom CSS -->
+		<style type="text/css" media="screen">
+			body {
+				font-family: 'Open Sans', sans-serif;
+				font-weight: 400 !important;
+				overflow-x: hidden;
+				-webkit-font-smoothing: antialiased;
+				-moz-osx-font-smoothing: grayscale;
+			}
+
+			a,
+			button {
+				outline: none !important;
+			}
+
+			a:hover {
+				text-decoration: none;
+				cursor: pointer;
+			}
+
+			/* CUSTOM SECTION PADDING */
+			.sect-xxl {
+				padding-top: 200px;
+				padding-bottom: 200px;
+			}
+
+			.sect-xl {
+				padding-top: 150px;
+				padding-bottom: 150px;
+			}
+
+			.sect-lg {
+				padding-top: 100px;
+				padding-bottom: 100px;
+			}
+
+			.sect-md {
+				padding-top: 50px;
+				padding-bottom: 50px;
+			}
+
+			.sect-sm {
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+
+			.form-control,
+			.help-block {
+				font-size: 14px;
+			}
+		</style>
+	</head>
+	<body>
+		<section id="" class="">
+			<div class="container sect-md">
+				<div class="row">
+					<div class="col-lg-4 offset-lg-4">
+
+						<h1>Contact Form</h1>
+						<p class="lead">Demo</p>
+
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-4 offset-lg-4">
+
+						<form id="contact-form" method="post" action="assets/php/contact.php" role="form">
+
+							<div class="messages"></div>
+
+							<div class="controls">
+
+								<div class="form-group has-feedback">
+									<input type="text" id="form-name" class="form-control form-control-success form-control-danger" name="form_name" placeholder="Guest's Name(s) &hellip; *" required="required" data-error="Please enter your full name(s)">
+									<div class="help-block form-text with-errors form-control-feedback"></div>
+								</div>
+
+								<div class="form-group has-feedback">
+									<input type="email" id="form-email" class="form-control form-control-success form-control-danger" name="form_email" placeholder="Email address &hellip; *" required="required" data-error="Please enter a valid email address">
+									<div class="form-control-feedback help-block with-errors"></div>
+								</div>
+
+<!--
+								<div class="form-group has-feedback" style="margin-bottom: 1rem; display: flex; justify-content: space-between;">
+									<label for="form-attend" class="text-xs-left">Attending?</label>
+									<input type="text" id="form-attend" class="form-control form-control-success form-control-danger" name="form_attendance" placeholder="Yes/No &amp; No. of attending &hellip; *" required="required" data-error="Please let us know if you will be attending and how many" style="width: 66% !important">
+									<div class="form-control-feedback help-block with-errors"></div>
+								</div>
+-->
+
+								<div class="form-group">
+									<div class="form-check form-check-inline has-feedback">
+	<!-- 									<label for="">Attending?</label> -->
+										<label for="form_attending_1" class="form-check-label">
+											<input type="radio" id="form_attending_1" class="form-check-input" name="form_attending" value="option1" required="required" data-error="Please let us know if you will be attending"> Attending
+										</label>
+									</div>
+
+									<div class="form-check form-check-inline has-feedback">
+										<label for="form_attending_2" class="form-check-label">
+											<input type="radio" id="form_attending_2" class="form-check-input" name="form_attending" value="option2" required="required" data-error="Please let us know if you will be attending"> Not Attending
+										</label>
+<!-- 										<div class="form-control-feedback help-block with-errors"></div> -->
+									</div>
+									<div class="form-control-feedback help-block with-errors"></div>
+								</div>
+
+								<div class="form-group has-feedback">
+									<textarea rows="4" id="form-message" class="form-control form-control-success form-control-danger" name="form_message" placeholder="Please leave us a note, a special request, etc. &hellip;" data-error="Please add your message here"></textarea>
+								</div>
+								<div class="form-control-feedback help-block with-errors"></div>
+
+<!-- 								<input type="submit" class="btn btn-success btn-send" value="send message"> -->
+
+								<input type="submit" class="btn btn-block btn-info" value="RSVP">
+
+								<button type="reset" class="btn btn-block btn-danger">RESET</button>
+
+								<br>
+
+								<p class="text-muted"><strong>*</strong> These fields are required.</p>
+							</div>
+						</form>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- JavaScript -->
+		<!-- ================================================== -->
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+		<!-- jQuery JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+
+		<!-- Tether JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+
+		<!-- Bootstrap JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+		<!-- Bootstrap Validator JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js"></script>
+
+		<!-- Contact JS -->
+		<script type="text/javascript" src="assets/js/contact.js"></script>
+	</body>
+</html>

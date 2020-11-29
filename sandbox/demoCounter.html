@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags always come first -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<title></title>
+
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" integrity="sha384-AysaV+vQoT3kOAXZkl02PThvDr8HYKPZhNT5h/CXfBThSRXQ6jW5DO2ekP5ViFdi" crossorigin="anonymous">
+
+		<!-- Google Fonts CSS -->
+<!-- 	    <link rel='stylesheet' type='text/css' href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700&subset=latin-ext"> -->
+
+		<link rel="stylesheet" type="text/css" href="http://gopipers.co.uk/counter/fonts/stylesheet.css">
+
+	    <!-- Custom CSS -->
+	    <style type="text/css" media="screen">
+		    * {
+/* 			    box-sizing: content-box; */
+		    }
+
+		    #counter {
+			    width: 425px;
+			    height: 100px;
+			    margin: 5px auto 0;
+			    font-family: 'LeagueGothicRegular', Arial, Helvetica, sans-serif;
+			    font-size: 3.25rem;
+			    line-height: 1;
+			    color: #bf244e;
+			    text-shadow: 0 1px 0 #fff;
+			    box-sizing: content-box;
+			    overflow: hidden;
+		    }
+
+		    .countDays,
+		    .countHours,
+		    .countMinutes,
+		    .countSeconds,
+		    .points,
+		    .position,
+		    .boxName {
+			    float: left;
+		    }
+
+		    .countDays {
+			    width: 4.75rem;
+		    }
+
+		    .countHours,
+		    .countMinutes,
+		    .countSeconds {
+			    width: 3.5rem;
+		    }
+
+		    .countDays,
+		    .countHours,
+		    .countMinutes,
+		    .countSeconds {
+			    height: 5.625rem;
+			    padding-left: 1.25rem;
+/* 			    background-color: #f2e9d8; */
+			    border: 1px solid #ccc;
+			    border-radius: .25rem;
+			    background-image: linear-gradient(rgba(255, 255, 255, .1), rgba(0, 0, 0, .07));
+			    box-shadow:
+			    	0px 2px 3px 0 rgba(255, 255, 255, .2) inset,
+			    	0 2px 2px 0 rgba(0, 0, 0, .1);
+		    }
+
+		    .points {
+			    width: 1.875rem;
+			    margin: 0;
+			    padding-bottom: 2.5rem;
+			    font-family: Georgia, serif;
+			    font-size: 2.5rem;
+			    font-weight: bold;
+			    line-height: 1.5;
+			    text-align: center;
+			    text-shadow: none;
+		    }
+
+		    .position {
+			    position: relative;
+			    width: 1.25rem;
+			    height: 3.25rem;
+			    margin: 8px 0 0;
+		    }
+
+		    .digit {
+			    position: absolute;
+			    top: 0;
+			    left: 0;
+		    }
+
+		    .boxName {
+			    width: 5rem;
+			    margin: -5px 0 0 1px;
+			    font-size: 1.625rem;
+			    color: #a6a6a6;
+			    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+		    }
+	    </style>
+	</head>
+	<body>
+		<section id="" class="">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-8 offset-md-2">
+
+						<div id="counter" class="countdownHolder">
+
+							<div class="countDays">
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="boxName">
+									<span class="Days">DAYS</span>
+								</span>
+							</div>
+							<span class="points">:</span>
+							<span class="countDiv countDiv0"></span>
+
+							<div class="countHours">
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="boxName">
+									<span class="Hours">HRS</span>
+								</span>
+							</div>
+							<span class="points">:</span>
+							<span class="countDiv countDiv1"></span>
+
+							<div class="countMinutes">
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="boxName">
+									<span class="Minutes">MNTS</span>
+								</span>
+							</div>
+							<span class="points">:</span>
+							<span class="countDiv countDiv2"></span>
+
+							<div class="countSeconds">
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="position">
+									<span class="digit static">0</span>
+								</span>
+								<span class="boxName">
+									<span class="Seconds">SECS</span>
+								</span>
+							</div>
+<!--
+							<span class="points">:</span>
+							<span class="countDiv countDiv3"></span>
+-->
+
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- JavaScript -->
+		<!-- ================================================== -->
+		<!-- jQuery first, then Tether, then Bootstrap JS. -->
+
+		<!-- jQuery JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js" integrity="sha384-3ceskX3iaEnIogmQchP8opvBy3Mi7Ce34nWjpBIwVTHfGYWQS9jwHDVRnpKKHJg7" crossorigin="anonymous"></script>
+
+		<!-- Tether JS -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.3.7/js/tether.min.js" integrity="sha384-XTs3FgkjiBgo8qjEjBk0tGmf3wPrWtA6coPfQDfFEY8AnYJwjalXCiosYRBIBZX8" crossorigin="anonymous"></script>
+
+		<!-- Bootstrap JS -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/js/bootstrap.min.js" integrity="sha384-BLiI7JTZm+JWlgKa0M0kGRpJbF2J8q+qreVrKBC47e3K6BW78kGLrCkeRX6I9RoK" crossorigin="anonymous"></script>
+
+		<!-- Modernizr -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.js"></script>
+
+		<!-- Countdown JS -->
+		<script src="http://gopipers.co.uk/counter/js/jquery.countdown.js"></script>
+
+		<!-- Custom JS -->
+		<script type="" src="http://gopipers.co.uk/counter/js/scriptTest.js"></script>
+	</body>
+</html>

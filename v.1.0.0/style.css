@@ -1,0 +1,569 @@
+@import url('http://gopipers.co.uk/fonts/westbalaio/stylesheet.css');
+@import url('http://gopipers.co.uk/fonts/moderno.20/stylesheet.css');
+@import url('http://gopipers.co.uk/fonts/exmouth/stylesheet.css');
+@import url('http://gopipers.co.uk/counter/fonts/stylesheet.css');
+
+/*
+.brdr {
+	border: 1px solid red;
+}
+*/
+
+body {
+	position: relative;
+	font-family: 'Sanchez', serif;
+	font-weight: 400;
+	background-color: rgb(179, 205, 207);
+	color: white;
+	overflow-x: hidden;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+header,
+section,
+footer#contact {
+	text-align: center;
+}
+
+section {
+	border-bottom: 1px solid #444;
+}
+
+.img-thumbnail,
+.shadow {
+	box-shadow: 2px 2px 15px #444;
+	-moz-box-shadow: 2px 2px 15px #444;
+	-webkit-box-shadow: 2px 2px 15px #444;
+}
+
+.img-thumbnail {
+	padding: .5rem;
+	border-radius: .1rem;
+}
+
+.btn {
+	padding: .5rem 2rem;
+	letter-spacing: 1px;
+	border-radius: .1rem;
+}
+
+.btn-info {
+	background-color: rgba(217, 102, 111, 1);
+	border-color: rgba(217, 102, 111, 1);
+}
+
+.btn-info:focus,
+.btn-info:hover {
+	background-color: rgba(217, 102, 111, .85);
+	border-color: rgba(217, 102, 111, 1);
+}
+
+
+/********************************
+	CUSTOM TYPOGRAPHY
+********************************/
+
+h1 {
+	font-family: 'Yesteryear', cursive;
+	font-size: 4rem;
+	font-weight: normal;
+	text-shadow: 2px 2px 0px rgb(217, 102, 111);
+}
+
+#couple h1,
+#venues h1,
+#accom h1 {
+	text-shadow: 2px 2px 0 #444 !important;
+}
+
+blockquote p,
+h5,
+b {
+	text-shadow: 1px 1px 0 #444;
+}
+
+a,
+button {
+	color: rgb(217, 102, 111);
+/* 				white-space: pre-wrap; */
+	word-wrap: break-word;
+	outline: none !important;
+	transition: .6s ease all;
+	-o-transition: .6s ease all;
+	-ms-transition: .6s ease all;
+	-moz-transition: .6s ease all;
+	-webkit-transition: .6s ease all;
+}
+
+a:focus,
+a:hover {
+	text-decoration: none;
+	cursor: pointer;
+	color: rgb(255, 105, 115);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-left: 2rem;
+	padding: 0;
+	list-style: none;
+}
+
+ol {
+	list-style: decimal;
+}
+
+.tc-pink {
+	color: rgb(217, 102, 111);
+}
+
+
+/********************************
+	CUSTOM SECTION PADDING
+********************************/
+
+.sect-xxl {
+	padding-top: 200px;
+	padding-bottom: 200px;
+}
+
+.sect-xl {
+	padding-top: 150px;
+	padding-bottom: 150px;
+}
+
+.sect-lg {
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+.sect-md {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.sect-sm {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+
+/********************************
+	CUSTOM MARGINS
+********************************/
+
+.mg-xxl {
+	margin-top: 10px;
+	margin-bottom: 80px;
+}
+
+.mg-xl {
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.mg-lg {
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.mg-md {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.mg-sm {
+	margin-top: 0;
+}
+
+
+/********************************
+	CUSTOM BACKGROUNDS
+********************************/
+
+.bg-green {
+	background: url('http://gopipers.co.uk/img/head.png') center center repeat;
+}
+
+.bg-pink {
+	background: url('http://gopipers.co.uk/img/alt_sect.png') center center repeat;
+}
+
+.bg-dark {
+	background: url('http://gopipers.co.uk/img/gray_sand.png') center center repeat;
+}
+
+
+/********************************
+	SECTION: HEADER
+********************************/
+
+header {
+	border-bottom: 1px solid rgb(217, 102, 111);
+}
+
+#main-header {
+	width: 500px;
+	height: 500px;
+	margin: 1rem auto;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(191, 36, 78);
+	background-color: #f2e9d8;
+	border-radius: 50% !important;
+	box-shadow: inset 0 0 8px #444;
+}
+
+
+#main-header .border {
+	position: relative;
+	display: table;
+	width: 460px;
+	height: 460px;
+	margin: 0 auto;
+	top: 1.25rem;
+	background-color: transparent;
+	border: 1px solid rgb(191, 36, 78);
+	border-radius: 50% !important;
+}
+
+#main-header .content {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#main-header h1,
+#main-header h2,
+#main-header h6 {
+	line-height: 1;
+}
+
+#main-header h1 {
+	font-family: 'westbalaioregular', serif;
+	font-size: 3.5rem;
+	text-shadow: none;
+}
+
+#main-header h2 {
+	font-size: 5rem;
+	letter-spacing: .5rem;
+}
+
+#main-header h2,
+#main-header h4 {
+	font-family: 'modern_no.20regular', serif;
+}
+
+#main-header h4,
+#main-header h6 {
+	margin-bottom: 0;
+	font-size: 2.5rem;
+	letter-spacing: 3px;
+}
+
+#main-header h6 {
+	font-family: 'exmouthregular', cursive;
+	text-transform: capitalize;
+}
+
+.mask {
+	mask-image: url('http://gopipers.co.uk/img/mask_2.png');
+	-o-mask-image: url('http://gopipers.co.uk/img/mask_2.png');
+	-moz-mask-image: url('http://gopipers.co.uk/img/mask_2.png');
+	-webkit-mask-image: url('http://gopipers.co.uk/img/mask_2.png');
+}
+
+.brackets {
+	position: absolute;
+	width: 20rem;
+	top: 40%;
+	left: 15%;
+}
+
+
+/********************************
+	SECTION: COUNTDOWN
+********************************/
+#counter {
+	width: 425px;
+	height: 100px;
+	margin: 5px auto 0;
+	font-family: 'LeagueGothicRegular', Arial, Helvetica, sans-serif;
+	font-size: 3.25rem;
+	line-height: 1;
+/* 	color: #bf244e; */
+	color: rgb(217, 102, 111);
+	text-shadow: 0 1px 0 #fff;
+	box-sizing: content-box;
+	overflow: hidden;
+}
+
+.countDays,
+.countHours,
+.countMinutes,
+.countSeconds,
+.points,
+.position,
+.boxName {
+	float: left;
+}
+
+.countDays {
+	width: 4.75rem;
+}
+
+.countHours,
+.countMinutes,
+.countSeconds {
+	width: 3.5rem;
+}
+
+.countDays,
+.countHours,
+.countMinutes,
+.countSeconds {
+	height: 5.625rem;
+	padding-left: 1.25rem;
+/*     background-color: #f2e9d8; */
+    background-color: #f7f7f9;
+	border: 1px solid #ccc;
+	border-radius: .25rem;
+	background-image: linear-gradient(top, rgba(255, 255, 255, .1), rgba(0, 0, 0, .07));
+	background-image: -o-linear-gradient(top, rgba(255, 255, 255, .1), rgba(0, 0, 0, .07));
+	background-image: -ms-linear-gradient(top, rgba(255, 255, 255, .1), rgba(0, 0, 0, .07));
+	background-image: -moz-linear-gradient(top, rgba(255, 255, 255, .1), rgba(0, 0, 0, .07));
+	background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, .1), rgba(0, 0, 0, .07));
+	background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, .1)), to(rgba(0, 0, 0, .07)));
+	box-shadow:
+		0px 2px 3px 0 rgba(255, 255, 255, .2) inset,
+		0 2px 2px 0 rgba(0, 0, 0, .1);
+}
+
+.points {
+	width: 1.875rem;
+	margin: 0;
+	padding-bottom: 2.5rem;
+	font-family: Georgia, serif;
+	font-size: 2.5rem;
+	font-weight: bold;
+	line-height: 1.5;
+	text-align: center;
+	text-shadow: none;
+}
+
+.position {
+	position: relative;
+	width: 1.25rem;
+	height: 3.25rem;
+	margin: 8px 0 0;
+}
+
+.digit {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.boxName {
+	width: 5rem;
+	margin: -5px 0 0 1px;
+	font-size: 1.625rem;
+/* 	color: #a6a6a6; */
+	color: #777;
+	text-align: left;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+
+/********************************
+	SECTION: NAVBAR
+********************************/
+
+nav {
+	width: 100%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	box-shadow: 0px 2px 1rem -1px #444;
+	z-index: 1000;
+}
+
+.navbar {
+	border-radius: 0;
+}
+
+.navbar-toggler {
+/* 	color: white !important; */
+	background-color: rgb(217, 102, 111);
+/* 	background-image: none !important; */
+	border-color: transparent !important;
+	border-radius: .1rem;
+	cursor: default;
+}
+
+.navbar-nav {
+	font-size: .875rem;
+	text-align: center;
+}
+
+ul.nav {
+	margin: 0;
+}
+
+.nav-item {
+	display: block;
+	margin-left: 0 !important;
+/* 				margin-right: .5rem; */
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	float: none !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+	padding-left: .75rem;
+	padding-right: .75rem;
+	color: rgba(217, 102, 111, .75);
+	border-bottom: 2px solid transparent;
+}
+
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+	color: rgba(217, 102, 111, 1);
+	border-bottom-color: rgb(217, 102, 111);
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .active>.nav-link:focus,
+.navbar-light .navbar-nav .active>.nav-link:hover,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.active:focus,
+.navbar-light .navbar-nav .nav-link.active:hover {
+	color: white;
+	background: rgba(217, 102, 111, 1);
+	border-bottom-color: rgba(217, 102, 111, .5);
+}
+
+
+/********************************
+	SECTION: THE COUPLE
+********************************/
+
+.blockquote {
+	border-left: none;
+}
+
+blockquote p {
+	font-family: 'Playball', cursive;
+}
+
+blockquote p::before,
+blockquote p::after {
+	font-family: "FontAwesome";
+	font-weight: normal;
+	font-size: 2rem;
+/* 				color: black; */
+}
+
+blockquote p::before {
+	content: "\f10d";
+	padding-right: 1rem;
+}
+
+blockquote p::after {
+	content: "\f10e";
+	padding-left: 1rem;
+}
+
+.blockquote-footer {
+	font-size: 90%;
+	color: #ccc;
+}
+
+
+/********************************
+	SECTION: VENUES
+********************************/
+
+.map {
+	width: 380px;
+	height: 280px;
+	margin: 0 auto;
+	border: .5rem solid white;
+}
+
+
+/********************************
+	SECTION: ACCOMMODATION
+********************************/
+
+.card {
+	min-height: 255px;
+	font-family: Georgia, serif;
+	font-size: 80%;
+	text-align: left;
+	background: #f2f2e8;
+	color: #444;
+	border: .5rem solid white;
+	border-radius: .1rem;
+	box-shadow: 2px 2px 15px #444;
+}
+
+.card::nth-child(4n+3) {
+	clear: both;
+}
+
+.card-block {
+	padding: .75rem 1rem;
+}
+
+.card h5 {
+	text-shadow: none;
+}
+
+
+/********************************
+	SECTION: FOOTER
+********************************/
+
+footer ul {
+	margin-left: 0;
+}
+
+footer li {
+	margin-bottom: 1rem;
+}
+
+footer .form-control {
+	border-radius: .15rem;
+}
+
+.form-check-inline {
+	margin-bottom: 1rem;
+}
+
+.form-check+.form-check {
+	margin-top: 0;
+}
+
+#sub-footer {
+	padding-top: .33rem;
+	color: rgba(217, 102, 111, 1);
+	border-top: 2px solid rgb(217, 102, 111);
+}
+
+#sub-footer p {
+	margin-bottom: .33rem;
+	font-size: .875rem;
+}
+
+
+/********************************
+	RESPONSIVE: MEDIA QUERIES
+********************************/
+
+@media (min-width: 992px) {
+	.nav-item {
+		display: inline-block;
+	}
+}
