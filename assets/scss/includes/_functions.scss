@@ -1,0 +1,22 @@
+// Sass functions
+
+@function breakpoint($breakpoint) {
+    @return map-get($breakpoints, $breakpoint);
+}
+
+
+@function image-url($path) {
+    // ensure there is a base path.
+    // to configure, set $path-images in shared variables file
+    $path-images: '../../assets/img' !default;
+
+    @return url('#{$path-images}/#{$path}');
+}
+
+@function font-url($path) {
+    // ensure there is a base path
+    // to configure, set $path-images in shared variables file
+    $path-fonts: '../../assets/fonts' !default;
+
+    @return url('#{$path-fonts}/#{$path}');
+}

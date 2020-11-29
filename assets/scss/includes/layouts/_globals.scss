@@ -1,0 +1,41 @@
+/* GLOBALS */ 
+.container {
+    width: 75%;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.row {
+    padding-top: .75rem;
+
+    &+.row {
+        margin-top: 5.25rem;
+    }
+}
+
+.col {
+    flex: 100%;
+
+    // &:first-of-type {
+    //     flex: 2;
+    // }
+
+    // &+.col {
+    //     margin-left: 2rem;
+    // }
+    &-half {
+        flex: 1;
+    }
+}
+
+.flex {
+    @media screen and (min-width: breakpoint(md)) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+ion-icon {
+    margin-bottom: -.25rem;
+    font-size: 1.5rem;
+}

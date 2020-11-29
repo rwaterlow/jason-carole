@@ -1,0 +1,19 @@
+/* MENUS */
+.menu {
+    &--main {
+        margin: 0;
+        font-size: $font-size-sm;
+        text-align: center;
+        text-transform: uppercase;
+
+        @media screen and (min-width: breakpoint(md)) {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .menu-item + .menu-item {
+                margin-left: 1rem;
+            }
+        }
+    }
+}

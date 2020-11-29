@@ -1,0 +1,19 @@
+// All variables used on the site
+
+//  The following are good examples of variable groups named with a dash to indicate descendency: 
+//  $font-x 
+//  $font-weight-x 
+//  $color-x 
+//  $icon-x 
+//  $breakpoint-x 
+
+
+//Relative to build files
+$path-images: '../../assets/images';
+$path-fonts: '../../assets/fonts';
+
+@import 'colors';
+@import 'type';
+@import 'breakpoints';
+@import 'transitions';
+// @import 'keyframes';

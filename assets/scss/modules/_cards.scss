@@ -1,0 +1,44 @@
+/* CARDS */
+.card {
+    padding: 1rem;
+    color: $color-base;
+    background: $color-brand-accent;
+    border: .5rem solid $color-light;
+    box-shadow: 2px 2px 1rem $color-base;
+
+    &-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+        grid-auto-rows: 1fr;
+        gap: 2rem;
+
+        margin: 5rem auto;
+    }
+
+    &-title {
+        margin-bottom: .25rem;
+    }
+
+    &-sub {
+        font-size: $font-size-sm;
+    }
+    
+    &-text {
+        font-size: $font-size-xs;
+    }
+
+    &-list {
+        padding-left: 0;
+
+        &__text {
+            font-size: $font-size-xs;
+            font-weight: bolder;
+        }
+    }
+}
+
+.map {
+    width: 380px;
+    min-height: 280px;
+    margin: 0 auto 1.5rem;
+}

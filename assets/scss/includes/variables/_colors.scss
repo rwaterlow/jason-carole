@@ -1,0 +1,25 @@
+// Custom colours
+$color-light: #fff;
+$color-dark: #444;
+$color-green: rgb(179, 205, 207);
+$color-pink: rgb(217, 102, 111);
+$color-pinker: rgb(191, 36, 78);
+$color-faded: #f7f7f9;
+$color-cream: #f2e9d8;
+
+// Colours
+$color-base: $color-dark;           // colour of most body text (was #333)
+$color-brand: $color-pinker;          // main brand colour, main logo colour (was #e44053)
+$color-brand-accent: $color-cream;  // brand accent colour might also be used in the logo, or generally as an accent (was #1d988a)
+$color-canvas: $color-green;        // background colour of the body element
+$color-canvas-alt: $color-pink;    // alternate canvas colour. If needed define a $color-base-alt for copy ont this (was #ebedec)
+$color-keyline: #d7d7d7;          // line dividers
+
+// Colours for states
+$color-state-error: #ae0c14;
+$color-state-success: #4c7c47;
+$color-state-warning: #334558;
+
+// Text Shadow
+$text-shadow: 1px 1px 0 $color-base;
+$title-shadow: 2px 2px 0 $color-base;
