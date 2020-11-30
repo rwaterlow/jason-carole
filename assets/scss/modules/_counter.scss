@@ -30,7 +30,11 @@
 }
 
 .digital {
-    font-size: 3rem;
+    font-size: 1rem;
+
+    @media screen and (min-width: breakpoint(xs)) {
+        font-size: 3rem;
+    }
 }
 
 .countDiv {
@@ -40,12 +44,19 @@
 
 .boxName {
     display: block;
-    font-size: 1.75rem;
+    font-size: 1rem;
     color: $color-base;
+
+    @media screen and (min-width: breakpoint(xs)) {
+        font-size: 1.75rem;
+    }
 }
 
 .points {
     margin-top: 0.5rem;
-    font-size: 2.5rem;
     font-weight: bold;
+    
+    @media screen and (min-width: breakpoint(xs)) {
+        font-size: 2.5rem;
+    }
 }

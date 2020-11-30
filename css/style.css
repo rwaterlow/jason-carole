@@ -499,9 +499,15 @@ img {
 
 blockquote {
   font-family: "Playball", cursive;
-  font-size: 3.5rem;
+  font-size: 2.3rem;
   font-weight: normal;
   text-align: center;
+}
+
+@media screen and (min-width: 600px) {
+  blockquote {
+    font-size: 3.5rem;
+  }
 }
 
 blockquote p {
@@ -579,81 +585,11 @@ ion-icon {
 .site-header {
   margin: 0 auto;
   text-align: center;
-  background: #b3cdcf url("/assets/img/head.png") center center repeat;
+  background: #b3cdcf url("/assets/img/head.png");
 }
 
-.site-branding span {
-  display: block;
-  font-family: 'Modern No. 20', serif;
-  font-size: 2.4rem;
-  font-weight: normal;
-  letter-spacing: .25rem;
-  line-height: 1.25;
-  text-transform: uppercase;
-  color: #bf244e;
-}
-
-.site-branding span:nth-of-type(1) {
-  font-family: 'WestBalaio', serif;
-  font-size: 3.5rem;
-}
-
-.site-branding span:nth-of-type(3) {
-  font-size: 5rem;
-  letter-spacing: 0.5rem;
-}
-
-.site-branding span:nth-of-type(4) {
-  font-family: 'Exmouth', cursive;
-  text-transform: capitalize;
-}
-
-#main-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  position: relative;
-  width: 500px;
-  height: 500px;
+.site-branding {
   margin: 1rem auto;
-  background: #f2e9d8;
-  border-radius: 50%;
-  -webkit-box-shadow: inset 0 0 0.5rem #444;
-          box-shadow: inset 0 0 0.5rem #444;
-}
-
-#main-header .border {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: column;
-          flex-flow: column;
-  width: 460px;
-  height: 460px;
-  margin: 0 auto;
-  border: 1px solid #bf244e;
-  border-radius: 50%;
-}
-
-#main-header .brackets {
-  position: absolute;
-  width: 20rem;
-  top: 40%;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
 }
 
 /* MAIN */
@@ -755,7 +691,13 @@ ion-icon {
 }
 
 .digital {
-  font-size: 3rem;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .digital {
+    font-size: 3rem;
+  }
 }
 
 .countDiv {
@@ -765,14 +707,25 @@ ion-icon {
 
 .boxName {
   display: block;
-  font-size: 1.75rem;
+  font-size: 1rem;
   color: #444;
+}
+
+@media screen and (min-width: 600px) {
+  .boxName {
+    font-size: 1.75rem;
+  }
 }
 
 .points {
   margin-top: 0.5rem;
-  font-size: 2.5rem;
   font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+  .points {
+    font-size: 2.5rem;
+  }
 }
 
 /* NAV */
@@ -865,7 +818,8 @@ ion-icon {
 }
 
 .list--contact {
-  margin-top: 0;
+  margin: 0;
+  padding: 0;
   text-align: center;
 }
 
